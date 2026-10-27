@@ -13,7 +13,7 @@
 ### Na pós-fixa os operandos aparecem na ordem "esquerdo, direito, operador". Ao empilhar, o operando direito é o último a entrar e, portanto, o primeiro  a sair (LIFO). Assim, o 1º pop é o direito e o 2º é o esquerdo. Inverter isso trocaria a ordem dos operandos e quebraria operações não comutativas: "8 3 -" viraria 3 - 8 = -5 em vez de 8 - 3 = 5.
 ***
 ## 4) Qual a relação entre pós-ordem e notação pós-fixa?
-###São a mesma sequência. A pós-ordem visita esquerda, direita e depois a raiz; a pós-fixa escreve os operandos antes do operador. Percorrer a árvore de expressão em pós ordem devolve exatamente a pós-fixa que a gerou (ex.: 8 4 2 * +). Analogamente, pré-ordem equivale à prefixa e em ordem equivale à infixa (sem os parênteses).
+### São a mesma sequência. A pós-ordem visita esquerda, direita e depois a raiz; a pós-fixa escreve os operandos antes do operador. Percorrer a árvore de expressão em pós ordem devolve exatamente a pós-fixa que a gerou (ex.: 8 4 2 * +). Analogamente, pré-ordem equivale à prefixa e em ordem equivale à infixa (sem os parênteses).
 ***
 ## 5) Para uma árvore com n nós, qual a complexidade de tempo para calcular toda a expressão? Justifique.
 ### O(n). A função calcular visita cada nó exatamente uma vez: cada chamada faz um trabalho de tempo constante (uma comparação e uma operação aritmética) e depois delega para os dois filhos. Como o total de chamadas é n, o tempo total é n * O(1) = O(n).
