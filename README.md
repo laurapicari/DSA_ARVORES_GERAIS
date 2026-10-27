@@ -1,7 +1,7 @@
 # atividade_DSA_05-10
 
 ***
-#ANÁLISE
+# ANÁLISE
 ***
 ## 1) Por que a expressão precisa ser tokenizada?
 ### Porque o programa recebe uma string de caracteres, e os operandos podem ter vários caracteres. Sem tokenizar, "15" seria lido como '1' e '5' separados, e "12.5" seria quebrado no ponto. A tokenização agrupa os caracteres em unidades com significado (números, operadores, parênteses), ignora espaços e é o ponto onde caracteres inválidos são detectados. As etapas seguintes (pós-fixa e árvore) trabalham com tokens, não com caracteres soltos.
