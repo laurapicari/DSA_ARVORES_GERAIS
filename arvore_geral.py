@@ -193,7 +193,7 @@ def desafio():
     arvore.inserir(administracao, "Biblioteca")
 
     print("\n" + "=" * 50)
-    print("DESAFIO: ESTRUTURA ACADÊMICA AMPLIADA")
+    print("ESTRUTURA ACADÊMICA AMPLIADA")
     print("=" * 50)
     arvore.mostrar(arvore.raiz)
 
